@@ -1,0 +1,361 @@
+/* --------------------------------- Start Login Page --------------------------------- */
+/* Style Main */
+.main{
+    min-height: 100vh;
+}
+/* Style Form Div */
+.main .form-div{
+    flex-basis: 28%;
+    background-color: #ffffff10;
+    padding: 0 30px 30px;
+    border-radius: 8px;
+}
+.main .form-div .lang{
+    height: 80px;
+}
+.main .form-div .lang p{
+    padding: 0 10px;
+}
+.lang p.en{
+    padding: 0 10px;
+    border-right: 1px solid #ffffff30;
+}
+/* Title */
+.main .form-div .title{
+    font-size: 30px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    color: #474ece;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* Lable */
+.main .form-div .lbl{
+    font-size: 15px;
+    margin-bottom: 30px;
+    padding: 0 5px;
+    color: #fff;
+}
+.main .form-div .txt{
+    margin-bottom: 35px;
+    width: 100%;
+    background: none;
+    border-bottom: 2px solid #2d339b;
+    padding: 3px 5px;
+    font-size: 15px;
+    color: #fff;
+}
+.form-div .button-div .btn{
+    width: 50%;
+    border-radius: 8px;
+    background-color: #383EC7;
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+.form-div .button-div .btn:hover{
+    background-color: #232881;
+}
+/* --------------------------------- End Login Page --------------------------------- */
+/* --------------------------------- Start Home Page --------------------------------- */
+.container{
+    height: 100%;
+}
+/* Style Sidebar */
+.container .sidebar{
+    width: 80px;
+    height: 100%;
+    border-right: 1px solid rgb(97, 97, 97);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: #fff;
+    padding: 15px;
+    background-color: #1A1A1A;
+    overflow: hidden;
+    transition: width .5s;
+}
+/* Header sidebar */
+.sidebar .header-sidebar{
+    margin-bottom: 50px;
+}
+.sidebar .header-sidebar .brand{
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: none;
+}
+.sidebar .header-sidebar .brand .brand-name{
+    padding: 0 5px;
+}
+.sidebar .header-sidebar .menu-ic{
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+/* Links in Sidebar */
+.links-sidebar .ulist{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.links-sidebar .ulist .item a{
+    padding: 14px 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    width: 100%;
+    transition: background-color .3s;
+    font-weight: 500;
+}
+.links-sidebar .ulist .item a .link-name{
+    display: none;
+    padding: 0 10px;
+}
+.links-sidebar .ulist .item a:hover,
+.links-sidebar .ulist .item a.active{
+    background-color: #6868681a;
+    color: #fff;
+}
+.links-sidebar .ulist .item a .icon{
+    /* text-align: center; */
+    transition: color .5s;
+}
+.links-sidebar .ulist .item a:hover .icon,
+.links-sidebar .ulist .item a.active .icon{
+    color: #A55FEB;
+}
+/* style Header */
+.container .header{
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 80px;
+    width: calc(100% - 80px);
+    padding: 10px 20px;
+    border-bottom: 1px solid #666;
+    z-index: 900;
+    background-color: #1A1A1A;
+    transition: all .5s;
+}
+.header .admin-info .adm-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #A55FEB;
+    padding: 2px;
+    margin: 0 10px;
+    box-shadow: 0 0 10px 0 #101cff;
+}
+.header .admin-info .adm-name{
+    color: #999;
+}
+.header .lang p{
+    padding: 0 15px;
+}
+.header .lang p a{
+    color: #FFFFFF;
+}
+/* Style Mian Content */
+.container .main-content{
+    margin-top: 70px;
+    margin-left: 80px;
+    min-height: 400px;
+    padding: 20px;
+    transition: margin .5s;
+    padding-bottom: 50px;
+}
+.main-content .cards-div .single-card{
+    flex-basis: 28.33333%;
+    margin: 0 1.5% 30px;
+    background-color: #6868681a;
+    min-height: 220px;
+    min-width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.cards-div .single-card .icon-div{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ffffff05;
+    font-size: 35px;
+    color: #A55FEB;
+    margin-bottom: 25px;
+}
+.cards-div .single-card .card-name{
+    font-size: 20px;
+    font-weight: 600;
+    color: #999;
+    margin-bottom: 15px;
+}
+.cards-div .single-card .num{
+    font-size: 25px;
+    font-weight: bold;
+    color: #eee;
+    letter-spacing: 1px;
+}
+/* Style Charts */
+.charts-sec .charts-div .single-chart{
+    padding: 30px 20px;
+}
+.charts-sec .charts-div .single-chart.bar{
+    padding: 30px 200px;
+}
+.charts-div .single-chart .chart-title{
+    font-size: 22px;
+    color: #2d339b;
+    margin-bottom: 30px;
+}
+/* --------------------------------- End Home Page --------------------------------- */
+/* ------------------------------- Start Users Page ------------------------------- */
+.main-content .search-div{
+    margin-bottom: 35px;
+}
+.main-content .search-div .search{
+    flex-basis: 93%;
+    margin: 0 1%;
+    height: 50px;
+    background-color: #ffffff10;
+    border-radius: 10px;
+    padding: 0 15px;
+    font-size: 18px;
+    color: #eee;
+}
+.main-content .search-div .btn-search{
+    flex-basis: 5%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #ffffff10;
+    font-size: 20px;
+    color: #A55FEB;
+    cursor: pointer;
+    padding: 15px;
+}
+/* Style table for User */
+.main-content .resp-table{
+    overflow-y: auto;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    margin-bottom: 50px;
+}
+.main-content .user-table{
+    flex-basis: 100%;
+    min-width: 950px;;
+    border: none;
+    border-collapse: collapse;
+    color: #fff;
+    overflow-y: auto;
+    box-shadow: 0 0 20px 0 #ffffff10;
+}
+.main-content .user-table thead{
+    text-align: left;
+    background-color: #ffffff10;
+}
+.user-table th{
+    font-size: 17px;
+    padding: 15px;
+    color: #383EC7;
+}
+.user-table td{
+    font-size: 17px;
+    padding: 10px 15px;
+    min-width: 50px;
+}
+.user-table tbody tr:nth-child(even){
+    background-color: #8f93e710;
+}
+.user-table tbody tr:last-child{
+    border-bottom: 3px solid #383EC7;
+}
+.user-table .radius{
+    border-radius: 5px;
+}
+.user-table tbody td img{
+    border-radius: 50%;
+    border: 2px solid #383EC7;
+    padding: 2px;
+    width: 50px;
+    height: 50px;
+}
+.user-table tbody td .icon{
+    display: block;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #ffffff10;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #AB66C0;
+}
+.user-table tbody td .icon:hover{
+    color: #eee;
+}
+.users-section .button-div .add-btn{
+    width: 50px;
+    padding: 12px 35px;
+    background-color: #383EC7;
+    color: #fff;
+    border-radius: 5px;
+}
+.users-section .button-div .add-btn:hover{
+    background-color: #2d339b;
+}
+/* ------------------------------- End Users Page ------------------------------------ */
+/* ------------------------------- Start Add User Page ------------------------------- */
+.add-section .add-form .form{
+    flex-basis: 45%;
+    min-width: 300px;
+    background-color: #6868681a;
+    padding: 45px 25px 25px;
+    border-radius: 10px;
+}
+.add-form .form .form-name{
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: #474ece;
+}
+.add-form .form .div-inpt{
+    margin: 5px 0 25px;
+}
+.add-form .form .lbl{
+    color: #474ece;
+}
+.add-form .form .inpt{
+    padding: 17px 10px;
+    background-color: #68686835;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #999;
+    margin-bottom: 10px;
+}
+.add-form .form .inpt.half-w{
+    flex-basis: 47%;
+}
+.add-form .form .inpt.half-w:first-child{
+    margin-right: 3%;
+}
+.add-form .form .inpt.full-w{
+    width: 100%;
+}
+.add-form .form .button-div .btn{
+    padding: 12px;
+    min-width: 140px;
+    min-height: 40px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #474ece;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add-form .form .button-div .btn:hover{
+    background-color: #2d339b;
+
+}

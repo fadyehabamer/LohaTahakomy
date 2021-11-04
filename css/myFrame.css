@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+        background-color: #1A1A1A;
+}
+/* Styel Input */
+.no-bord{
+    border: none;
+}
+.no-out:focus{
+    outline: none;
+}
+/* style display */
+.to-block{
+    display: block;
+}
+.inline-block{
+    display: inline-block;
+}
+/* Style Flex Property */
+.flex{
+    display: flex;
+}
+.just-around{
+    justify-content: space-around;
+}
+.just-between{
+    justify-content: space-between;
+}
+.just-center{
+    justify-content: center;
+}
+.ali-center{
+    align-items: center;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.dir-col{
+    flex-direction: column;
+}
+/* Text Align */
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+/* Margin Style */
+.marg-center{
+    margin: auto;
+}
+/* Link Reset */
+a{
+    text-decoration: none;
+    color: #555;
+}
+/* Reset Ul List */
+.clasic-list{
+    list-style-type: none;
+}
+/* Image */
+.resp-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.circle-image{
+    border-radius: 50%;
+}
+/* section Name */
+.sec-name{
+    margin-bottom: 55px;
+    font-size: 25px;
+    color: #FFFFFF;
+    padding: 0 25px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}

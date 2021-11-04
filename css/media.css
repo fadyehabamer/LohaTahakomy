@@ -1,0 +1,137 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .main .form-div{
+        flex-basis: 95%;
+    }
+    .form-div .button-div .btn{
+        width: 100%;
+    }
+    .charts-sec .charts-div .single-chart.bar{
+        padding: 30px 20px;
+    }
+    .main-content .cards-div{
+        flex-direction: column;
+    }
+    .main-content .cards-div .single-card{
+        flex-basis: 100%;
+        margin: 0 0 30px 0;
+        min-width: 100%;
+    }
+    .main-content .search-div .search{
+        font-size: 13px;
+        height: 40px;
+        margin: 1%;
+    }
+    .main-content .search-div .btn-search{
+        padding: 12px;
+        font-size: 13px;
+        height: 40px;
+    }
+    .sec-name{
+        font-size: 18px;
+        margin-bottom: 30px;
+        padding: 0 10px;
+        text-align: center;
+    }
+    .user-table td{
+        font-size: 15px;
+        padding: 7px 10px;
+    }
+    .add-section .add-form .form{
+        flex-basis: 100%;
+        min-width: 200px;
+    }
+    .add-form .form .div-inpt{
+        flex-direction: column;
+    }
+    .add-form .form .inpt.half-w{
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .add-form .form .inpt.half-w:first-child{
+        margin-right: 0;
+    }
+    .add-form .form .inpt{
+        padding: 12px 8px;
+        margin-bottom: 5px;
+    }
+    .add-form .form .button-div .btn{
+        width: 100%;
+    }
+    .add-form .form .div-inpt{
+        margin: 5px 0 15px;
+    }
+    .container .header{
+        padding: 10px;
+    }
+    .header .admin-info .adm-name{
+        font-size: 12px;
+    }
+    .header .admin-info .adm-image{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .main .form-div{
+        flex-basis: 60%;
+    }
+    .charts-sec .charts-div .single-chart.bar{
+        padding: 30px 20px;
+    }
+    .main-content .cards-div{
+        flex-direction: column;
+    }
+    .main-content .cards-div .single-card{
+        flex-basis: 100%;
+        margin: 0 0 30px 0;
+        min-width: 100%;
+    }
+    .add-section .add-form .form{
+        flex-basis: 90%;
+    }
+    .add-form .form .div-inpt{
+        flex-direction: column;
+    }
+    .add-form .form .inpt.half-w{
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .add-form .form .inpt.half-w:first-child{
+        margin-right: 0;
+    }
+    .add-form .form .inpt{
+        padding: 12px 8px;
+        margin-bottom: 5px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .main .form-div{
+        flex-basis: 45%;
+    }
+    .charts-sec .charts-div .single-chart.bar{
+        padding: 30px 80px;
+    }
+    .add-section .add-form .form{
+        flex-basis: 75%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .main .form-div{
+        flex-basis: 35%;
+    }
+    .add-section .add-form .form{
+        flex-basis: 60%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
