@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Users</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.1/css/all.min.css"
+        integrity="sha512-9my9Mb2+0YO+I4PUCSwUYO7sEK21Y0STBAiFEYoWtd2VzLEZZ4QARDrZ30hdM1GlioHJ8o8cWQiy8IAb1hy/Hg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/myFrame.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+</head>
+<body>
+    <!-- Start Container -->
+    <div class="container">
+        <!-- Start Side Bar -->
+        <aside class="sidebar" id="sidebar">
+            <!-- Header Side Bar -->
+            <div class="header-sidebar flex just-between ali-center">
+                <h1 class="brand">
+                    <span class="fas fa-tachometer-alt logo-ic"></span>
+                    <span class="brand-name">Dashboard</span>
+                </h1>
+                <span class="fas fa-bars menu-ic to-block" id="menu-ic"></span>
+            </div>
+            <!-- Links in Side Bar -->
+            <div class="links-sidebar">
+                <!-- List of Links -->
+                <ul class="ulist clasic-list flex dir-col">
+                    <li class="item">
+                        <a href="index.html" class="to-block text-center"><span class="fas fa-home icon"></span><span class="link-name">Home</span></a>
+                    </li>
+                    <li class="item">
+                        <a href="table.html" class="to-block text-center"><span class="fas fa-users icon"></span><span class="link-name">Users</span></a>
+                    </li>
+                    <li class="item">
+                        <a href="add.html" class="to-block active text-center"><span class="fas fa-user icon"></span><span class="link-name">Add User</span></a>
+                    </li>
+
+                    <li class="item logout">
+                        <a href="login.html" class="to-block text-center"><span class="fas fa-sign-out-alt icon"></span><span class="link-name">Logout</span></a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- End Side Bar -->
+        <!-- Start Header -->
+        <header class="header flex just-between ali-center">
+            <div class="admin-info flex just-start ali-center">
+                <div class="adm-image">
+                    <img src="../img/admin.jpg" alt="Admin Photo" class="resp-image circle-image">
+                </div>
+                <h3 class="adm-name">FADY AMER</h3>
+            </div>
+            <div class="lang flex just-between ali-center">
+                <p class="en" id="en"><a href="../EN/add.html">En</a></p>                
+                <p class="ar" id="ar"><a href="../AR/addar.html">Ar</a></p>
+            </div>
+        </header>
+        <!-- End Header -->
+        <!-- Start Main -->
+        <main class="main-content">
+            <!-- Start Add User Section -->
+            <section class="add-section">
+                <!-- Sectino Name -->
+                <h3 class="sec-name">Add New User</h3>
+                <div class="add-form flex just-center ali-center">
+                    <!-- Start Add Form -->
+                    <form class="form">
+                        <!-- form title -->
+                        <h4 class="form-name text-center">Add User</h4>
+                        <!-- Single line input -->
+                        <label  class="lbl inline-block" for="name">Full Name</label>
+                        <div class="full-name div-inpt flex just-between ali-center wrap">
+                            <input type="text" class="half-w inpt to-block no-bord no-out" placeholder="First Name">
+                            <input type="text" class="half-w inpt to-block no-bord no-out" placeholder="Last Name">
+                        </div>
+                        <!-- Single line input -->
+                        <label  class="lbl inline-block" for="username">User-Name</label>
+                        <div class="username div-inpt">
+                            <input type="text" class="full-w inpt to-block no-bord no-out" placeholder="User Name">
+                        </div>
+                        <!-- Single line input -->
+                        <label  class="lbl inline-block" for="email">Email Address</label>
+                        <div class="email div-inpt">
+                            <input type="email" class="full-w inpt to-block no-bord no-out" placeholder="name@example.com">
+                        </div>
+                        <!-- Single line input -->
+                        <label  class="lbl inline-block" for="pass">Password</label>
+                        <div class="pass div-inpt">
+                            <input type="password" class="full-w inpt to-block no-bord no-out" placeholder="*********">
+                        </div>
+                        <!-- Single line input -->
+                        <div class="button-div div-inpt text-center">
+                            <button class="btn no-bord no-out">Submit</button>
+                        </div>
+                    </form>
+                    <!-- End Add Form -->
+                </div>
+            </section>
+            <!-- End Add User Section -->
+        </main>
+        <!-- End Main -->
+    </div>
+    <!-- End Container -->
+    <!-- Start Js File -->
+    <script src="../js/main.js"></script>
+    <!-- End Js File -->
+</body>
+</html>
