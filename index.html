@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.1/css/all.min.css"
+        integrity="sha512-9my9Mb2+0YO+I4PUCSwUYO7sEK21Y0STBAiFEYoWtd2VzLEZZ4QARDrZ30hdM1GlioHJ8o8cWQiy8IAb1hy/Hg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/myFrame.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rtl.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <!-- start Container -->
+    <div class="container">
+        <!-- Start Side Bar -->
+        <aside class="sidebar" id="sidebar">
+            <!-- Header Side Bar -->
+            <div class="header-sidebar flex just-between ali-center">
+                <h1 class="brand flex just-between ali-center">
+                    <span class="fas fa-tachometer-alt logo-ic to-block"></span>
+                    <span class="brand-name to-block">لوحة تحكم</span>
+                </h1>
+                <span class="fas fa-bars menu-ic to-block" id="menu-ic"></span>
+            </div>
+            <!-- Links in Side Bar -->
+            <div class="links-sidebar">
+                <!-- List of Links -->
+                <ul class="ulist clasic-list flex dir-col">
+                    <li class="item">
+                        <a href="index.html" class="to-block text-center active"><span
+                                class="fas fa-home icon"></span><span class="link-name">الرئيسية</span></a>
+                    </li>
+                    <li class="item">
+                        <a href="AR/tablear.html" class="to-block text-center"><span
+                                class="fas fa-users icon"></span><span class="link-name">المستخدمين</span></a>
+                    </li>
+                    <li class="item">
+                        <a href="AR/addar.html" class="to-block text-center"><span class="fas fa-user icon"></span><span
+                                class="link-name">إضاقة مستخدم</span></a>
+                    </li>
+
+                    <li class="item logout">
+                        <a href="AR/loginar.html" class="to-block text-center"><span
+                                class="fas fa-sign-out-alt icon"></span><span class="link-name">الخروج</span></a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- End Side Bar -->
+        <!-- Start Header -->
+        <header class="header flex just-between ali-center">
+            <div class="admin-info flex just-start ali-center">
+                <div class="adm-image">
+                    <img src="img/admin.jpg" alt="Admin Photo" class="resp-image circle-image">
+                </div>
+                <h3 class="adm-name"> فادي عامر </h3>
+            </div>
+            <div class="lang flex just-between ali-center">
+                <p class="en" id="en"><a href="index_en.html">En</a></p>
+                <p class="ar" id="ar"><a href="index.html">Ar</a></p>
+            </div>
+        </header>
+        <!-- End Header -->
+        <!-- Start Main -->
+        <main class="main-content">
+            <section class="statics-sec">
+                <h3 class="sec-name">اخر المعلومات</h3>
+                <!-- Cards Div -->
+                <div class="cards-div flex just-between ali-center wrap">
+                    <!-- Single Card -->
+                    <div class="single-card text-center">
+                        <div class="icon-div flex just-center ali-center marg-center">
+                            <span class="fas fa-users icon"></span>
+                        </div>
+                        <div class="desc-div">
+                            <p class="card-name">جميع المستخدمين</p>
+                            <span class="num">+ 14,538</span>
+                        </div>
+                    </div>
+                    <!-- Single Card -->
+                    <div class="single-card text-center">
+                        <div class="icon-div flex just-center ali-center marg-center">
+                            <span class="fas fa-exchange-alt icon"></span>
+                        </div>
+                        <div class="desc-div">
+                            <p class="card-name">المستخدمين الجدد</p>
+                            <span class="num">+ 539</span>
+                        </div>
+                    </div>
+                    <!-- Single Card -->
+                    <div class="single-card text-center">
+                        <div class="icon-div flex just-center ali-center marg-center">
+                            <span class="fas fa-money-bill-alt icon"></span>
+                        </div>
+                        <div class="desc-div">
+                            <p class="card-name">الأرباح</p>
+                            <span class="num">123,158 $</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Start Charts Section -->
+           <section class="charts-sec">
+            <h3 class="sec-name">الإحصائيات</h3>
+            <!-- Start Charts Div -->
+            <div class="charts-div">
+                <!-- Single Charts -->
+                <div class="single-chart bar">
+                    <h4 class="chart-title text-center">الزياده في المستخدمين</h4>
+                    <canvas id="user-increase"></canvas>
+                </div>
+                <div class="tow-charts">
+                    <!-- Single Charts -->
+                    <div class="single-chart doughnut">
+                        <h4 class="chart-title text-center">المستخدمين القدامي</h4>
+                        <canvas id="user-delete"></canvas>
+                    </div>
+                    <!-- Single Charts -->
+                    <div class="single-chart line-boundaries">
+                        <h4 class="chart-title text-center">المستخدمين النشطاء الان</h4>
+                        <canvas id="online-user"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!-- End Charts Div -->
+        </section>
+        <!-- End Charts Section -->
+        </main>
+        <!-- End Main -->
+           
+    </div>
+    <!-- End Container -->
+    <!-- Start Js File -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/main.js"></script>
+    <!-- End Js File -->
+</body>
+
+</html>
