@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض الاعضاء</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.1/css/all.min.css"
+        integrity="sha512-9my9Mb2+0YO+I4PUCSwUYO7sEK21Y0STBAiFEYoWtd2VzLEZZ4QARDrZ30hdM1GlioHJ8o8cWQiy8IAb1hy/Hg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/myFrame.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/rtl.css">
+    <link rel="stylesheet" href="../css/media.css">
+</head>
+
+<body>
+    <!-- Start Container -->
+    <div class="container">
+        <!-- Start Side Bar -->
+        <aside class="sidebar" id="sidebar">
+            <!-- Header Side Bar -->
+            <div class="header-sidebar flex just-between ali-center">
+                <h1 class="brand">
+                    <span class="fas fa-tachometer-alt logo-ic"></span>
+                    <span class="brand-name">لوحة التحكم</span>
+                </h1>
+                <span class="fas fa-bars menu-ic to-block" id="menu-ic"></span>
+            </div>
+            <!-- Links in Side Bar -->
+            <div class="links-sidebar">
+                <!-- List of Links -->
+                <ul class="ulist clasic-list flex dir-col">
+                    <li class="item">
+                        <a href="../index.html" class="to-block text-center"><span class="fas fa-home icon"></span><span
+                                class="link-name">الرئيسية</span></a>
+                    </li>
+                    <li class="item">
+                        <a href="tablear.html" class="to-block active text-center"><span
+                                class="fas fa-users icon"></span><span class="link-name">المستخدمين</span></a>
+                    </li>
+                    <li class="item">
+                        <a href="addar.html" class="to-block text-center"><span class="fas fa-user icon"></span><span
+                                class="link-name">إضافة مستخدم</span></a>
+                    </li>
+                    <li class="item logout">
+                        <a href="loginar.html" class="to-block text-center"><span
+                                class="fas fa-sign-out-alt icon"></span><span class="link-name">الخروج</span></a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- End Side Bar -->
+        <!-- Start Header -->
+        <header class="header flex just-between ali-center">
+            <div class="admin-info flex just-start ali-center">
+                <div class="adm-image">
+                    <img src="../img/admin.jpg" alt="Admin Photo" class="resp-image circle-image">
+                </div>
+                <h3 class="adm-name">فادي عامر</h3>
+            </div>
+            <div class="lang flex just-between ali-center">
+                <p class="en" id="en"><a href="../EN/table.html">En</a></p>
+                <p class="ar" id="ar"><a href="../AR/tablear.html">Ar</a></p>
+            </div>
+        </header>
+        <!-- End Header -->
+        <!-- Start Main -->
+        <main class="main-content">
+            <div class="search-div flex just-between ali-center">
+                <input type="text" class="txt search to-block no-bord no-out" id="search" placeholder="إبحث عن مستخدين">
+                <button class="btn-search no-bord no-out"><span
+                        class="fas fa-search icon to-block flex just-center ali-center"></span></button>
+            </div>
+            <section class="users-section">
+                <!-- Title -->
+                <h3 class="sec-name">جميع المستخدمين</h3>
+                <!-- Start Resposive table div -->
+                <div class="resp-table">
+                    <!-- Start Table -->
+                    <table class="user-table">
+                        <!-- start thead -->
+                        <thead>
+                            <!-- Single Row -->
+                            <tr>
+                                <th class="text-right">الرقم</th>
+                                <th>أسم المستخدم</th>
+                                <th>البريد الإلكتروني</th>
+                                <th>الحالة</th>
+                                <th>الصورة</th>
+                                <th class="text-center">التحكم</th>
+                            </tr>
+                        </thead>
+                        <!-- End thead -->
+                        <!-- Start tbody -->
+                        <tbody>
+                            <!-- Single Row -->
+                            <tr>
+                                <td>1</td>
+                                <td>أحمد ايهاب</td>
+                                <td>ahmed123@gmail.com</td>
+                                <td>نشط</td>
+                                <td><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=74daec1914d1d105202bca8a310a6a71"
+                                        alt="User"></td>
+                                <td class="flex just-center ali-center">
+                                    <a href="#"><span class="far fa-trash-alt icon delte"></span></a>
+                                    <a href="#"><span class="fas fa-pencil-alt icon edit"></span></a>
+                                    <a href="#"><span class="fas fa-lock icon deactive"></span></a>
+                                </td>
+                            </tr>
+                            <!-- Single Row -->
+                            <tr>
+                                <td>2</td>
+                                <td>مني عبدالعزيز</td>
+                                <td>mona134@gmail.com</td>
+                                <td>نشط</td>
+                                <td><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BYzg2NDY4MjAtZDBjNS00MGRhLWJkZDMtYWJkZDM1NWZiMzgyXkEyXkFqcGdeQXVyMTE1MzA3MTI@._V1_UX172_CR0,0,172,256_AL_.jpg"
+                                        alt="User"></td>
+                                <td class="flex just-center ali-center">
+                                    <a href="#"><span class="far fa-trash-alt icon delte"></span></a>
+                                    <a href="#"><span class="fas fa-pencil-alt icon edit"></span></a>
+                                    <a href="#"><span class="fas fa-lock icon deactive"></span></a>
+                                </td>
+                            </tr>
+                            <!-- Single Row -->
+                            <tr>
+                                <td>3</td>
+                                <td>محمد ابراهيم</td>
+                                <td>Mohamed334@gmail.com</td>
+                                <td>نشط</td>
+                                <td><img src="https://uifaces.co/our-content/donated/6f6p85he.jpg" alt="User"></td>
+                                <td class="flex just-center ali-center">
+                                    <a href="#"><span class="far fa-trash-alt icon delte"></span></a>
+                                    <a href="#"><span class="fas fa-pencil-alt icon edit"></span></a>
+                                    <a href="#"><span class="fas fa-lock icon deactive"></span></a>
+                                </td>
+                            </tr>
+                            <!-- Single Row -->
+                            <tr>
+                                <td>4</td>
+                                <td>ادم اسماعيل</td>
+                                <td>adam99@gmail.com</td>
+                                <td>نشط</td>
+                                <td><img src="https://uifaces.co/our-content/donated/Xp0NB-TL.jpg" alt="User"></td>
+                                <td class="flex just-center ali-center">
+                                    <a href="#"><span class="far fa-trash-alt icon delte"></span></a>
+                                    <a href="#"><span class="fas fa-pencil-alt icon edit"></span></a>
+                                    <a href="#"><span class="fas fa-lock icon deactive"></span></a>
+                                </td>
+                            </tr>
+                            <!-- Single Row -->
+                            <tr>
+                                <td>5</td>
+                                <td>كريم محمد</td>
+                                <td>kareem00@gmail.com</td>
+                                <td>نشط</td>
+                                <td><img src="https://randomuser.me/api/portraits/men/97.jpg" alt="User"></td>
+                                <td class="flex just-center ali-center">
+                                    <a href="#"><span class="far fa-trash-alt icon delte"></span></a>
+                                    <a href="#"><span class="fas fa-pencil-alt icon edit"></span></a>
+                                    <a href="#"><span class="fas fa-lock icon deactive"></span></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <!-- End tbody -->
+                    </table>
+                    <!-- End table -->
+                </div>
+                <!-- End Responsive table div -->
+                <!-- Start Add div -->
+                <div class="button-div text-center">
+                    <a href="addar.html" class="add-btn to-inline-block">إضاقة مستخدم</a>
+                </div>
+                <!-- End Add div -->
+            </section>
+            <!-- End User Table Section -->
+        </main>
+        <!-- End Main -->
+    </div>
+    <!-- End Container -->
+    <!-- Start Js File -->
+    <script src="../js/main.js"></script>
+    <!-- End Js File -->
+</body>
+
+</html>
