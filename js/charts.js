@@ -38,7 +38,9 @@ var myChart = new Chart(ctx, {
                     beginAtZero: true
                 }
             }]
-        }
+        }, responsive: true,
+        maintainAspectRatio:false,
+
     }
 });
 
@@ -72,7 +74,8 @@ var myChart = new Chart(ctx, {
                 'rgba(245, 29, 29, 1)'
             ],
             borderWidth: 3,
-            pointBorderWidth: 15
+            pointBorderWidth: 15,
+
         }]
     },
     options: {
@@ -82,35 +85,48 @@ var myChart = new Chart(ctx, {
             }]
         },
         hover: {
-            animationDuration: 1500 
-        }
+            animationDuration: 1500
+        },
+        responsive: true,
+        maintainAspectRatio:false,
+
     }
-    
+
 });
 
 // Start Third Charts:
-var ctx = document.getElementById('online-user').getContext('2d');
+var ctx = document.getElementById("online-user").getContext('2d');
 var myChart = new Chart(ctx, {
-    type: 'polarArea',
+    type: 'pie',
     data: {
+        labels: ['Online', 'Male', 'Female', 'Kids'],
         datasets: [{
-            data: [10, 20, 30],
-            
-        backgroundColor: [
-            'rgba(209, 66, 90, 0.2)',
-            'rgba(142, 40, 226, 0.2)',
-            'rgba(209, 66, 90, 0.2)'
-        ]
-        }],
-        labels: [
-            'red',
-            'Yellow',
-            'Blue'
-        ],
+            label: '# of users',
+            data: [12, 19, 3, 5],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.5)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)'
+            ],
+            borderWidth: 1,
+        }]
     },
     options: {
+        responsive: true,
+        maintainAspectRatio:false,
+        scales: {
+            yAxes: [{
+                stacked: false
+            }]
+        },
+
 
     }
-    
 });
-        

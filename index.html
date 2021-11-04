@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.1/css/all.min.css"
         integrity="sha512-9my9Mb2+0YO+I4PUCSwUYO7sEK21Y0STBAiFEYoWtd2VzLEZZ4QARDrZ30hdM1GlioHJ8o8cWQiy8IAb1hy/Hg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/myFrame.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/rtl.css">
@@ -111,34 +110,34 @@
                 </div>
             </section>
             <!-- Start Charts Section -->
-           <section class="charts-sec">
-            <h3 class="sec-name">الإحصائيات</h3>
-            <!-- Start Charts Div -->
-            <div class="charts-div">
-                <!-- Single Charts -->
-                <div class="single-chart bar">
-                    <h4 class="chart-title text-center">الزياده في المستخدمين</h4>
-                    <canvas id="user-increase"></canvas>
-                </div>
-                <div class="tow-charts">
+            <section class="charts-sec">
+                <h3 class="sec-name">الإحصائيات</h3>
+                <!-- Start Charts Div -->
+                <div class="charts-div">
                     <!-- Single Charts -->
-                    <div class="single-chart doughnut">
-                        <h4 class="chart-title text-center">المستخدمين القدامي</h4>
-                        <canvas id="user-delete"></canvas>
+                    <div class="single-chart bar">
+                        <h4 class="chart-title text-center">الزياده في المستخدمين</h4>
+                        <canvas  id="user-increase"></canvas>
                     </div>
-                    <!-- Single Charts -->
-                    <div class="single-chart line-boundaries">
-                        <h4 class="chart-title text-center">المستخدمين النشطاء الان</h4>
-                        <canvas id="online-user"></canvas>
+                    <div>
+                        <!-- Single Charts -->
+                        <div class="single-chart">
+                            <h4 class="chart-title text-center">المستخدمين القدامي</h4>
+                            <canvas   id="user-delete"></canvas>
+                        </div>
+                        <!-- Single Charts -->
+                        <div  class="single-chart">
+                            <h4 class="chart-title text-center">المستخدمين النشطاء الان</h4>
+                            <canvas  id="online-user"></canvas>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- End Charts Div -->
-        </section>
-        <!-- End Charts Section -->
+                <!-- End Charts Div -->
+            </section>
+            <!-- End Charts Section -->
         </main>
         <!-- End Main -->
-           
+
     </div>
     <!-- End Container -->
     <!-- Start Js File -->
