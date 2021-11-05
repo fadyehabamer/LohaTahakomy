@@ -11,7 +11,8 @@
 </p>
 
 
-<p align="right">
+<div dir="rtl">
+  
 # لوحة تحكمي
 
 ## تحكم و أعرض معلومات عن موقعك بكل سهولة
@@ -47,4 +48,4 @@
 - JavaScript
 - charts.js
   
-</p>
+</div>
