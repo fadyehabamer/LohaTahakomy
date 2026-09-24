@@ -22,4 +22,12 @@ menu.onclick = function () {
         }
         brand.style.display = "none";
     }
+    menu.setAttribute("aria-expanded", sideBar.style.width != "80px");
+}
+// keyboard support for the menu icon (it is a span with role="button")
+menu.onkeydown = function (e) {
+    if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        menu.click();
+    }
 }
