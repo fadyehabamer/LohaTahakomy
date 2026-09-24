@@ -44,3 +44,46 @@
 - charts.js
   
 </div>
+
+<div dir="rtl">
+
+#### معاينة مباشرة
+https://lohatahakomy.vercel.app
+
+#### طريقة التشغيل
+افتح الملف `index.html` (العربية) أو `index_en.html` (الإنجليزية) في المتصفح، أو شغّل خادمًا محليًا من مجلد المشروع:
+
+</div>
+
+```bash
+python3 -m http.server 8000
+# http://localhost:8000
+```
+
+---
+
+## English
+
+**LohaTahakomy** ("my dashboard") is a static, responsive admin dashboard template in Arabic (RTL) and English: a home page with stat cards and Chart.js charts, a users table, an add-user form and a login page.
+
+**Live demo:** https://lohatahakomy.vercel.app
+
+### Run locally
+
+No build step. Open `index.html` (Arabic) or `index_en.html` (English), or serve the folder with `python3 -m http.server 8000`.
+
+### Structure
+
+```
+index.html / index_en.html   dashboard home (AR / EN)
+AR/  EN/                     users table, add user, login pages
+css/                         myFrame.css (utility classes), style.css, rtl.css, media.css
+js/charts.js                 Chart.js charts (Chart.js 2.9.4 from jsDelivr)
+js/main.js                   sidebar collapse toggle
+```
+
+Font Awesome 5 and Chart.js are loaded from CDNs, so the page needs an internet connection for icons and charts.
+
+### License
+
+[MIT](LICENSE)
