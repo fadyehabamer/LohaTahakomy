@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="لوحة تحكمي: قالب لوحة تحكم عربي/إنجليزي متجاوب لإدارة المستخدمين وعرض الإحصائيات.">
     <title>الرئيسية</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
@@ -30,7 +31,7 @@
                     <span class="fas fa-tachometer-alt logo-ic to-block"></span>
                     <span class="brand-name to-block">لوحة تحكم</span>
                 </h1>
-                <span class="fas fa-bars menu-ic to-block" id="menu-ic"></span>
+                <span class="fas fa-bars menu-ic to-block" id="menu-ic" role="button" tabindex="0" aria-label="إظهار/إخفاء القائمة" aria-controls="sidebar"></span>
             </div>
             <!-- Links in Side Bar -->
             <div class="links-sidebar">
@@ -46,7 +47,7 @@
                     </li>
                     <li class="item">
                         <a href="AR/addar.html" class="to-block text-center"><span class="fas fa-user icon"></span><span
-                                class="link-name">إضاقة مستخدم</span></a>
+                                class="link-name">إضافة مستخدم</span></a>
                     </li>
 
                     <li class="item logout">
@@ -141,7 +142,9 @@
     </div>
     <!-- End Container -->
     <!-- Start Js File -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
+        integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha"
+        crossorigin="anonymous"></script>
     <script src="js/charts.js"></script>
     <script src="js/main.js"></script>
     <!-- End Js File -->
